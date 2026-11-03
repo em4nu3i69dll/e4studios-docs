@@ -18,4 +18,4 @@ Actualmente no hay scripts publicados en la tienda. Las instrucciones específic
 
 ## Enlaces
 
-[Tienda](https://e4studios.xyz/es/) · [Discord](https://discord.gg/NHmBGxvwp9) · [Contacto](mailto:contacto@em4nu3l69dll.dev)
+[Tienda](https://e4studios.xyz/es/) · [Discord](https://discord.e4studios.xyz/) · [Contacto](mailto:contacto@em4nu3l69dll.dev)

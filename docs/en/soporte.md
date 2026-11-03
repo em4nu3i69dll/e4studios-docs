@@ -1,6 +1,6 @@
 # Support
 
-Email [contacto@em4nu3l69dll.dev](mailto:contacto@em4nu3l69dll.dev) or join [E4Studios on Discord](https://discord.gg/NHmBGxvwp9).
+Email [contacto@em4nu3l69dll.dev](mailto:contacto@em4nu3l69dll.dev) or join [E4Studios on Discord](https://discord.e4studios.xyz/).
 
 ## Include
 

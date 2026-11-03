@@ -1,6 +1,6 @@
 # Soporte
 
-Puedes escribir a [contacto@em4nu3l69dll.dev](mailto:contacto@em4nu3l69dll.dev) o entrar al [Discord de E4Studios](https://discord.gg/NHmBGxvwp9).
+Puedes escribir a [contacto@em4nu3l69dll.dev](mailto:contacto@em4nu3l69dll.dev) o entrar al [Discord de E4Studios](https://discord.e4studios.xyz/).
 
 ## Qué enviar
 

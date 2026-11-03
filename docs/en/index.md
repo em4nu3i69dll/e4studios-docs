@@ -18,4 +18,4 @@ No scripts are currently published in the store. Resource-specific instructions 
 
 ## Links
 
-[Store](https://e4studios.xyz/en/) · [Discord](https://discord.gg/NHmBGxvwp9) · [Contact](mailto:contacto@em4nu3l69dll.dev)
+[Store](https://e4studios.xyz/en/) · [Discord](https://discord.e4studios.xyz/) · [Contact](mailto:contacto@em4nu3l69dll.dev)

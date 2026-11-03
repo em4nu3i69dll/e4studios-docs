@@ -2,7 +2,7 @@
 
 Documentación de E4Studios en español, inglés y portugués.
 
-[Abrir documentación](https://docs.e4studios.xyz/es/) · [Tienda](https://e4studios.xyz/es/) · [Discord](https://discord.gg/NHmBGxvwp9)
+[Abrir documentación](https://docs.e4studios.xyz/es/) · [Tienda](https://e4studios.xyz/es/) · [Discord](https://discord.e4studios.xyz/)
 
 ## Editar una página
 

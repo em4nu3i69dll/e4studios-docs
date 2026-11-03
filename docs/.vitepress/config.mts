@@ -3,7 +3,7 @@ import { writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 
 const repositorio = 'https://github.com/em4nu3i69dll/e4studios-docs'
-const discord = 'https://discord.gg/NHmBGxvwp9'
+const discord = 'https://discord.e4studios.xyz/'
 const origen = process.env.DOCS_ORIGIN || 'https://docs.e4studios.xyz'
 const base = process.env.DOCS_BASE || '/'
 const menus = {
