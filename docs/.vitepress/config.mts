@@ -69,7 +69,8 @@ export default defineConfig({
     return [['link', { rel: 'canonical', href: origen + '/' + ruta }]]
   },
   themeConfig: {
-    logo: { src: '/e4.svg', alt: 'E4Studios' }, siteTitle: 'E4Studios Docs',
+    logo: { light: '/e4-claro.svg', dark: '/e4.svg', alt: 'E4Studios' },
+    siteTitle: 'E4Studios Docs',
     socialLinks: [{ icon: 'github', link: repositorio }],
     externalLinkIcon: true,
     search: {
