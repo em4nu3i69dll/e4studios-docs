@@ -1,0 +1,29 @@
+:root {
+  --vp-c-brand-1: #cf294b;
+  --vp-c-brand-2: #e13d5d;
+  --vp-c-brand-3: #f14b67;
+  --vp-c-brand-soft: rgba(241,75,103,.1);
+  --vp-font-family-base: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --vp-sidebar-width: 272px;
+  --vp-nav-height: 66px;
+}
+.dark {
+  --vp-c-brand-1: #ff7990;
+  --vp-c-brand-2: #f45d77;
+  --vp-c-brand-3: #f14b67;
+  --vp-c-bg: #101114;
+  --vp-c-bg-alt: #0c0d10;
+  --vp-c-bg-soft: #191b20;
+  --vp-c-divider: #27292f;
+  --vp-c-text-1: #ececf0;
+  --vp-c-text-2: #aaaeb9;
+}
+.VPNavBarTitle .logo { height: 23px; width: 37px; }
+.VPDoc h1 { font-size: 34px; line-height: 1.25; letter-spacing: -.035em; }
+.vp-doc p, .vp-doc li { line-height: 1.85; }
+.vp-doc h2 { font-size: 23px; letter-spacing: -.025em; padding-top: 28px; }
+.VPSidebarItem.level-1 .text { font-size: 13px; }
+.VPDoc .content-container { max-width: 760px; }
+.VPNavBar { backdrop-filter: blur(12px); }
+.vp-doc a { text-underline-offset: 3px; }
+@media (max-width: 640px) { .VPDoc h1 { font-size: 29px; } }
