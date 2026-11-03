@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://docs.e4studios.xyz/sitemap.xml

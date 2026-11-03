@@ -1,4 +1,6 @@
 import { defineConfig } from 'vitepress'
+import { writeFile } from 'node:fs/promises'
+import { join } from 'node:path'
 
 const repositorio = 'https://github.com/em4nu3i69dll/e4studios-docs'
 const discord = 'https://discord.gg/NHmBGxvwp9'
@@ -50,7 +52,18 @@ export default defineConfig({
   appearance: true, base, locales,
   srcExclude: ['README.md'],
   head: [['link', { rel: 'icon', type: 'image/svg+xml', href: base + 'e4.svg' }], ['meta', { name: 'theme-color', content: '#f14b67' }]],
-  sitemap: { hostname: origen },
+  sitemap: {
+    hostname: new URL(origen).origin,
+    transformItems(items) {
+      return items.map(item => ({
+        ...item, url: base + item.url.replace(/^\//, ''),
+        links: item.links?.map(link => ({ ...link, url: base + link.url.replace(/^\//, '') }))
+      }))
+    }
+  },
+  async buildEnd(config) {
+    await writeFile(join(config.outDir, 'robots.txt'), 'User-agent: *\nAllow: /\nSitemap: ' + origen + '/sitemap.xml\n')
+  },
   transformHead({ pageData }) {
     const ruta = pageData.relativePath.replace(/index\.md$/, '').replace(/\.md$/, '.html')
     return [['link', { rel: 'canonical', href: origen + '/' + ruta }]]
