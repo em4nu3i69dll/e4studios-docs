@@ -1,0 +1,6 @@
+html, body, body * { -webkit-user-select: none !important; user-select: none !important; -webkit-touch-callout: none; }
+input, textarea, [contenteditable]:not([contenteditable="false"]), [contenteditable]:not([contenteditable="false"]) * {
+  -webkit-user-select: text !important; user-select: text !important; -webkit-touch-callout: default;
+}
+img, a { -webkit-user-drag: none; }
+

@@ -38,7 +38,6 @@ const locales = Object.fromEntries(Object.entries(menus).map(([codigo, t]) => [c
   themeConfig: {
     nav: [{ text: t.tienda, link: 'https://e4studios.xyz/' + codigo + '/' }, { text: 'Discord', link: discord }],
     sidebar: [{ text: t.grupo, items: rutas.map((ruta, i) => ({ text: t.paginas[i], link: '/' + codigo + '/' + (ruta ? ruta + '.html' : '') })) }],
-    editLink: { pattern: repositorio + '/edit/main/docs/:path', text: t.editar },
     docFooter: { prev: t.anterior, next: t.siguiente },
     outline: { label: t.indice, level: [2, 3] },
     sidebarMenuLabel: t.menu, darkModeSwitchLabel: t.tema, lightModeSwitchTitle: t.claro,
@@ -51,7 +50,7 @@ export default defineConfig({
   title: 'E4Studios Docs', description: menus.es.descripcion, lang: 'es-AR',
   appearance: true, base, locales,
   srcExclude: ['README.md'],
-  head: [['link', { rel: 'icon', type: 'image/svg+xml', href: base + 'e4.svg' }], ['meta', { name: 'theme-color', content: '#f14b67' }]],
+  head: [['link', { rel: 'stylesheet', href: base + 'interfaz.css?v=1' }], ['script', { src: base + 'interfaz.js?v=1', defer: '' }], ['link', { rel: 'icon', type: 'image/svg+xml', href: base + 'e4.svg' }], ['meta', { name: 'theme-color', content: '#f14b67' }]],
   sitemap: {
     hostname: new URL(origen).origin,
     transformItems(items) {
