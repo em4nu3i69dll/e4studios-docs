@@ -29,8 +29,8 @@ jobs:
       - run: npm audit --audit-level=moderate
       - run: npm run build
         env:
-          DOCS_BASE: ${{ vars.DOCS_BASE || '/e4studios-docs/' }}
-          DOCS_ORIGIN: ${{ vars.DOCS_ORIGIN || 'https://em4nu3i69dll.github.io/e4studios-docs' }}
+          DOCS_BASE: ${{ vars.DOCS_BASE || '/' }}
+          DOCS_ORIGIN: ${{ vars.DOCS_ORIGIN || 'https://docs.e4studios.xyz' }}
       - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b
         if: github.event_name != 'pull_request'
         with:

@@ -2,9 +2,7 @@
 
 Documentación de E4Studios en español, inglés y portugués.
 
-[Abrir documentación](https://em4nu3i69dll.github.io/e4studios-docs/es/) · [Tienda](https://e4studios.xyz/es/) · [Discord](https://discord.gg/NHmBGxvwp9)
-
-El dominio previsto es `docs.e4studios.xyz`. Su conexión DNS está pendiente.
+[Abrir documentación](https://docs.e4studios.xyz/es/) · [Tienda](https://e4studios.xyz/es/) · [Discord](https://discord.gg/NHmBGxvwp9)
 
 ## Editar una página
 
