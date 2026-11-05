@@ -50,7 +50,7 @@ export default defineConfig({
   title: 'E4Studios Docs', description: menus.es.descripcion, lang: 'es-AR',
   appearance: true, base, locales,
   srcExclude: ['README.md'],
-  head: [['link', { rel: 'stylesheet', href: base + 'interfaz.css?v=1' }], ['script', { src: base + 'interfaz.js?v=1', defer: '' }], ['link', { rel: 'icon', type: 'image/svg+xml', href: base + 'e4.svg' }], ['meta', { name: 'theme-color', content: '#f14b67' }]],
+  head: [['link', { rel: 'stylesheet', href: base + 'interfaz.css?v=1' }], ['script', { src: base + 'interfaz.js?v=1', defer: '' }], ['link', { rel: 'icon', sizes: 'any', href: base + 'favicon.ico' }], ['link', { rel: 'icon', type: 'image/png', sizes: '48x48', href: base + 'favicon-e4-48.png' }], ['link', { rel: 'icon', type: 'image/png', sizes: '192x192', href: base + 'favicon-e4-192.png' }], ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: base + 'apple-touch-icon.png' }], ['meta', { name: 'theme-color', content: '#f14b67' }]],
   sitemap: {
     hostname: new URL(origen).origin,
     transformItems(items) {
