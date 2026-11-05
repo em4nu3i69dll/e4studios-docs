@@ -64,8 +64,28 @@ export default defineConfig({
     await writeFile(join(config.outDir, 'robots.txt'), 'User-agent: *\nAllow: /\nSitemap: ' + origen + '/sitemap.xml\n')
   },
   transformHead({ pageData }) {
+    if (pageData.isNotFound) return [['meta', { name: 'robots', content: 'noindex,follow' }]]
     const ruta = pageData.relativePath.replace(/index\.md$/, '').replace(/\.md$/, '.html')
-    return [['link', { rel: 'canonical', href: origen + '/' + ruta }]]
+    const url = origen + '/' + ruta
+    const idioma = ruta.split('/')[0] as keyof typeof menus
+    const descripcion = pageData.description || menus[idioma]?.descripcion || menus.es.descripcion
+    const titulo = pageData.title || 'E4Studios Docs'
+    const articulo = {
+      '@context': 'https://schema.org', '@type': 'TechArticle', headline: titulo,
+      description: descripcion, url, inLanguage: menus[idioma]?.idioma || 'es-AR',
+      mainEntityOfPage: url,
+      publisher: { '@type': 'Organization', '@id': 'https://e4studios.xyz/#organizacion', name: 'E4Studios', url: 'https://e4studios.xyz/' }
+    }
+    const alternativos = idioma in menus ? Object.keys(menus).map(codigo => ['link', { rel: 'alternate', hreflang: codigo, href: origen + '/' + codigo + '/' + ruta.split('/').slice(1).join('/') }]) : []
+    return [
+      ['link', { rel: 'canonical', href: url }],
+      ['meta', { property: 'og:title', content: titulo + ' · E4Studios Docs' }],
+      ['meta', { property: 'og:description', content: descripcion }],
+      ['meta', { property: 'og:url', content: url }],
+      ['meta', { property: 'og:site_name', content: 'E4Studios Docs' }],
+      ...alternativos,
+      ['script', { type: 'application/ld+json' }, JSON.stringify(articulo).replaceAll('<', '\\u003c')]
+    ]
   },
   themeConfig: {
     logo: { light: '/e4-claro.svg', dark: '/e4.svg', alt: 'E4Studios' },
